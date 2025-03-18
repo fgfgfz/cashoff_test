@@ -1,3 +1,11 @@
+from os import getenv
+
+from dotenv import load_dotenv
+
+
+load_dotenv()
+
+
 # Parser settings
 URL = 'https://siriust.ru/'
 
@@ -11,14 +19,14 @@ HEADERS = {
 
 
 # DataBase settings
-LOGIN = 'LOGIN'
+LOGIN = getenv('LOGIN')
 
-PASSWORD = 'PASSWORD'
+PASSWORD = getenv('PASSWORD')
 
-HOST = 'HOST'
+HOST = getenv('HOST')
 
-PORT = 'PORT'
+PORT = getenv('PORT')
 
-DATABASE = 'DATABASE'
+DATABASE = getenv('DATABASE')
 
-SCHEMA = 'SCHEMA'
+SCHEMA = getenv('SCHEMA')
